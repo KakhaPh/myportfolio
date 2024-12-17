@@ -75,6 +75,9 @@ export const Resume = () => {
                                             <li>
                                                 <strong>Responsive Design:</strong> Mobile-first and cross-resolution compatibility
                                             </li>
+                                            <li>
+                                                <strong>OS:</strong> Linux system administration and troubleshooting | Windows OS and Windows Server management | System performance optimization and configuration
+                                            </li>
                                         </ul>
                                     </div>
 
