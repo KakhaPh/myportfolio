@@ -142,7 +142,7 @@ export const Resume = () => {
                                                 <strong>European University</strong>
                                                 <ul>
                                                     <li>Software Development Engineer / Web Designer (2021-Present)</li>
-                                                    <strong>Active Projects:</strong> 
+                                                    <strong>Active Projects:</strong>
                                                     <Row>
                                                         <span className='resume-urls'><a href='https://lawandworld.ge/'>Lawandworld.ge</a>;</span>
                                                         <span className='resume-urls'><a href='https://old.lawandworld.ge/'>old.lawandworld.ge</a>;</span>
@@ -157,6 +157,15 @@ export const Resume = () => {
                                                 <strong>Freelance Platforms Fiverr, Upower, Freelancer</strong>
                                                 <ul>
                                                     <li>UI/UX Designer / Front-end Developer (2019-Present)</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Self-Development Projects</strong>
+                                                <ul>
+                                                    <li>Real-Estate-Manager for Redberry : PHP/Laravel</li>
+                                                    <li>mobileShop - PHP/OOP/Ajax</li>
+                                                    <li>Globalization & Business - ReactJS, RestAPI, MySQL</li>
+                                                    <li>Incubator | Online University Idea - PHP/Laravel/MySQL | CMS/AdminPanel | Unique Routing with Traits </li>
                                                 </ul>
                                             </li>
                                         </ul>
