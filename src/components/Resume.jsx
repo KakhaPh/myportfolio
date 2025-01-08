@@ -1,7 +1,8 @@
 import { Col, Row } from 'react-bootstrap';
 import React from 'react';
 import 'react-multi-carousel/lib/styles.css';
-import mycv from "/assets/cv/CV-Kakha-Phutkaradze.pdf";
+import mycv1 from "/assets/cv/CV-Kakha-Phutkaradze.pdf";
+import mycv2 from "/assets/cv/Kakha_Phutkaradze_CV.pdf";
 
 
 export const Resume = () => {
@@ -174,7 +175,10 @@ export const Resume = () => {
                                         </ul>
                                     </div>
                                 </Col>
-                                <div className='downloadCvBtn pe-5 text-end'><a href={mycv} target='_blank' rel='noreferrer'>Download CV</a></div>
+                                <div className='downloadCvBtns d-flex justify-content-end pt-5'>
+                                    <div className='downloadCvBtn pe-5 text-end'><a href={mycv1} target='_blank' rel='noreferrer'>European University CV</a></div>
+                                    <div className='downloadCvBtn pe-5 '><a href={mycv2} target='_blank' rel='noreferrer'>My CV</a></div>
+                                </div>
                             </Row>
                         </div>
                     </div>
