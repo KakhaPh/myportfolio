@@ -5,6 +5,7 @@ import logo from '/assets/img/logo.png';
 import navIcon1 from '/assets/img/nav-icon1.svg';
 import navIcon2 from '/assets/img/nav-icon2.svg';
 import navIcon3 from '/assets/img/nav-icon3.svg';
+import navIcon4 from '/assets/img/nav-icon4.svg';
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -69,14 +70,17 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/kakha-phutkaradze-1a4b02225/">
+              <a href="https://www.linkedin.com/in/kakha-phutkaradze-1a4b02225/" target='_blank'>
                 <img src={navIcon1} alt="LinkedIn" />
               </a>
-              <a href="https://www.facebook.com/KPhutkaradze">
+              <a href="https://www.facebook.com/KPhutkaradze" target='_blank'>
                 <img src={navIcon2} alt="Facebook" />
               </a>
-              <a href="https://www.instagram.com/kakhaphutkaradze__/">
+              <a href="https://www.instagram.com/kakhaphutkaradze__/" target='_blank'>
                 <img src={navIcon3} alt="Instagram" />
+              </a>
+              <a href="https://github.com/kakhaph/" target='_blank'>
+                <img src={navIcon4} alt="Github" />
               </a>
             </div>
               <button className="vvd"><span>Let's Connect</span></button>
