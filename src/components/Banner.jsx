@@ -69,8 +69,8 @@ export const Banner = () => {
                     Blade. I'm here to design and implement effective web solutions
                     tailored to your needs.
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
+                  <button onClick={() => window.open("https://www.linkedin.com/in/kakha-phutkaradze-1a4b02225/", "_blank")} >
+                    Let's Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>
               )}
