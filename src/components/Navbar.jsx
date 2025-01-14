@@ -83,7 +83,7 @@ const NavBar = () => {
                 <img src={navIcon4} alt="Github" />
               </a>
             </div>
-              <button className="vvd"><span>Let's Connect</span></button>
+              <button className="vvd" onClick={() => {window.open("https://github.com/kakhaph/", "_blank")}}><span>Let's Connect</span></button>
           </span>
         </Navbar.Collapse>
       </Container>
