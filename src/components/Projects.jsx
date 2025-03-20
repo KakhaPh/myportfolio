@@ -8,12 +8,27 @@ import img4 from "/assets/img/img4.png";
 import img5 from "/assets/img/img5.png";
 import img6 from "/assets/img/img6.png";
 import img7 from "/assets/img/project-img4.png";
+import img8 from "/assets/img/img8.png";
+import img9 from "/assets/img/img9.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Redberry Bootcamp - NextJS/TypeScript",
+      description: "Development and Design",
+      imgUrl: img9,
+      linkIcon: "https://momentum-theta-lyart.vercel.app/",
+      githubIcon: "https://github.com/KakhaPh/momentum"
+    },
+    {
+      title: "Business Startup 8 - PHP/OOP",
+      description: "Development",
+      imgUrl: img8,
+      githubIcon: "https://github.com/KakhaPh/php-restaurant-management"
+    },
     {
       title: "Business Startup 7 - PHP/Laravel/Blade",
       description: "Design & Development",
@@ -26,42 +41,41 @@ export const Projects = () => {
       description: "Design & Development",
       imgUrl: img6,
       linkIcon: "https://mobileshop-kp.000webhostapp.com/",
-      githubIcon: "https://github.com/KakhaPh?tab=repositories",
+      githubIcon: "https://github.com/KakhaPh",
     },
     {
       title: "Business Startup 5 - Law insitute website",
       description: "Design & Development",
       imgUrl: img5,
-      linkIcon: "https://eugb.ge/index.php/111",
-      githubIcon: "https://github.com/KakhaPh?tab=repositories",
+      linkIcon: "https://eugb.ge/",
+      githubIcon: "https://github.com/KakhaPh",
     },
     {
       title: "Business Startup 4 - Law insitute website",
       description: "Design & Development",
       imgUrl: img4,
       linkIcon: "https://law.org.ge/",
-      githubIcon: "https://github.com/KakhaPh?tab=repositories",
+      githubIcon: "https://github.com/KakhaPh",
     },
     {
       title: "Business Startup 3 - Law institute website",
       description: "Design & Development",
       imgUrl: img3,
       linkIcon: "https://lawandworld.ge/",
-      githubIcon: "https://github.com/KakhaPh?tab=repositories",
+      githubIcon: "https://github.com/KakhaPh",
     },
     {
       title: "Business Startup 2 - First Real project",
       description: "Design & Development",
       imgUrl: img2,
       linkIcon: "http://old.lawandworld.ge/",
-      githubIcon: "https://github.com/KakhaPh?tab=repositories",
+      githubIcon: "https://github.com/KakhaPh",
     },
     {
       title: "Business Startup 1 - My first Portfolio",
       description: "Design & Development",
       imgUrl: img1,
-      linkIcon: "",
-      githubIcon: "https://github.com/KakhaPh?tab=repositories",
+      githubIcon: "https://github.com/KakhaPh/oldPortfolio",
     },
     // Repeat similar entries for other projects
   ];

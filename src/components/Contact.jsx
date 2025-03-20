@@ -56,15 +56,15 @@ export const Contact = () => {
   return (
     <section className="contact" id="connect">
       <Container>
-        <Row className="align-items-center">
-          <Col size={12} md={6}>
+        <Row className="align-items-center d-flex justify-content-center">
+          <Col size={12} md={2}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
+                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} width={100} height={100} src={contactImg} alt="Contact Us" />
               }
             </TrackVisibility>
           </Col>
-          <Col size={12} md={6}>
+          {/* <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
@@ -98,7 +98,7 @@ export const Contact = () => {
                 </div>
               }
             </TrackVisibility>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>
