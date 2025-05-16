@@ -10,12 +10,20 @@ import img6 from "/assets/img/img6.png";
 import img7 from "/assets/img/project-img4.png";
 import img8 from "/assets/img/img8.png";
 import img9 from "/assets/img/img9.png";
+import img01 from "/assets/img/img01.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Frontnews - Georgia - News website",
+      description: "NextJS + NodeJS + ExpressJS + TypeScript + MongoDB > Fullstack",
+      imgUrl: img01,
+      linkIcon: "https://frontnews.ge/",
+      githubIcon: "https://github.com/KakhaPh",
+    },
     {
       title: "Redberry Bootcamp - NextJS/TypeScript",
       description: "Development and Design",
@@ -77,7 +85,6 @@ export const Projects = () => {
       imgUrl: img1,
       githubIcon: "https://github.com/KakhaPh/oldPortfolio",
     },
-    // Repeat similar entries for other projects
   ];
 
   return (
