@@ -103,23 +103,27 @@ export const Resume = () => {
                                         <h3>Technologies</h3>
                                         <ul className='resume-ul'>
                                             <li>
-                                                <strong>Programming Languages</strong>
-                                                <ul>
-                                                    <li>PHP, Python, C/C++, JavaScript (ES6+)</li>
-                                                </ul>
-                                            </li>
-                                            <li>
                                                 <strong>Front-End Development</strong>
                                                 <ul>
-                                                    <li>React.js, Vue.js</li>
-                                                    <li>HTML5, CSS, Sass, Bootstrap</li>
+                                                    <li>HTML5</li>
+                                                    <li>CSS</li>
+                                                    <li>Sass</li>
+                                                    <li>Bootstrap</li>
+                                                    <li>Tailwind</li>
+                                                    <li>React.js</li>
+                                                    <li>Next.js</li>
+                                                    <li>Vue.js</li>
                                                     <li>JavaScript (ES6+)</li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <strong>Back-End Development</strong>
                                                 <ul>
-                                                    <li>PHP/MVC - Laravel, Python, C/C++</li>
+                                                    <li>PHP/MVC - Laravel</li>
+                                                    <li>NodeJS</li>
+                                                    <li>Python</li>
+                                                    <li>C/C++</li>
+                                                    <li>JavaScript (ES6+)</li>
                                                 </ul>
                                             </li>
                                             <li>
@@ -134,7 +138,8 @@ export const Resume = () => {
                                             <li>
                                                 <strong>Version Control</strong>
                                                 <ul>
-                                                    <li>Git, GitHub</li>
+                                                    <li>Git</li>
+                                                    <li>GitHub</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -143,9 +148,19 @@ export const Resume = () => {
                                         <h3>Work Experience</h3>
                                         <ul className='resume-ul'>
                                             <li>
+                                                <strong>Front News - Georgia (2025-present)</strong>
+                                                <ul>
+                                                    <li>Lead Full-Stack Developer · News Platform Architect</li>
+                                                    <strong>Active Project:</strong>
+                                                     <Row>
+                                                        <span className='resume-urls'><a href='https://frontnews.ge/'>Frontnews.ge</a>;</span>
+                                                    </Row>
+                                                </ul>
+                                            </li>
+                                            <li>
                                                 <strong>European University</strong>
                                                 <ul>
-                                                    <li>Software Development Engineer / Web Designer (2021-Present)</li>
+                                                    <li>Software Development Engineer / Web Designer (2022-Present)</li>
                                                     <strong>Active Projects:</strong>
                                                     <Row>
                                                         <span className='resume-urls'><a href='https://lawandworld.ge/'>Lawandworld.ge</a>;</span>
@@ -161,11 +176,13 @@ export const Resume = () => {
                                                 <strong>Freelance Platforms Fiverr, Upower, Freelancer</strong>
                                                 <ul>
                                                     <li>UI/UX Designer / Front-end Developer (2019-Present)</li>
+                                                    <li>Front-end Developer (2019-Present)</li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <strong>Self-Development Projects</strong>
                                                 <ul>
+                                                    <li>Task-Management-System for Redberry : NextJS</li>
                                                     <li>Real-Estate-Manager for Redberry : PHP/Laravel</li>
                                                     <li>mobileShop - PHP/OOP/Ajax</li>
                                                     <li>Globalization & Business - ReactJS, RestAPI, MySQL</li>

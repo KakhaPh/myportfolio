@@ -48,8 +48,8 @@ export const Skills = () => {
       { name: 'Sass', image: image3 },
       { name: 'Bootstrap', image: image4 },
       { name: 'JavaScript', image: image5 },
-      { name: 'ReactJS', image: image6 },
       { name: 'jQuery', image: image7 },
+      { name: 'ReactJS', image: image6 },
       { name: 'PHP', image: image8 },
       { name: 'Laravel', image: image9 },
       { name: 'Github', image: image10 },
@@ -57,8 +57,8 @@ export const Skills = () => {
       { name: 'Python', image: image12 },
       { name: 'WordPress', image: image13 },
       { name: 'Joomla', image: image14 },
-      { name: 'Joomla', image: image15 },
-      { name: 'Joomla', image: image16 },
+      { name: 'MySql', image: image15 },
+      { name: 'MongoDB', image: image16 },
     ];
     setSkills(fetchedSkills);
   }, []);
