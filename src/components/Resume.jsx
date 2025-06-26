@@ -1,7 +1,7 @@
 import { Col, Row } from 'react-bootstrap';
 import 'react-multi-carousel/lib/styles.css';
 import mycv1 from "/assets/cv/CV-Kakha-Phutkaradze.pdf";
-import mycv2 from "/assets/cv/Kakha_Phutkaradze_CV.pdf";
+import mycv2 from "/assets/cv/CV_Kakha_Phutkaradze.pdf";
 
 
 export const Resume = () => {
