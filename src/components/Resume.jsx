@@ -1,5 +1,4 @@
 import { Col, Row } from 'react-bootstrap';
-import React from 'react';
 import 'react-multi-carousel/lib/styles.css';
 import mycv1 from "/assets/cv/CV-Kakha-Phutkaradze.pdf";
 import mycv2 from "/assets/cv/Kakha_Phutkaradze_CV.pdf";

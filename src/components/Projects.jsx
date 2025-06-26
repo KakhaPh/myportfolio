@@ -11,12 +11,20 @@ import img7 from "/assets/img/project-img4.png";
 import img8 from "/assets/img/img8.png";
 import img9 from "/assets/img/img9.png";
 import img01 from "/assets/img/img01.png";
+import img02 from "/assets/img/img02.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Plagiarism Quizz - Mailing system",
+      description: "NextJS + ExpressJS + TypeScript",
+      imgUrl: img02,
+      linkIcon: "https://quizz-nine-wine.vercel.app/",
+      githubIcon: "https://github.com/KakhaPh",
+    },
     {
       title: "Frontnews - Georgia - News website",
       description: "NextJS + NodeJS + ExpressJS + TypeScript + MongoDB > Fullstack",
