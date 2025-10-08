@@ -12,12 +12,20 @@ import img8 from "/assets/img/img8.png";
 import img9 from "/assets/img/img9.png";
 import img01 from "/assets/img/img01.png";
 import img02 from "/assets/img/img02.jpg";
+import img03 from "/assets/img/img03.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Dental Clinic - Eudent Website",
+      description: "NextJS + NestJS + TypeScript + MongoDB",
+      imgUrl: img03,
+      linkIcon: "https://eudent.ge",
+      githubIcon: "https://github.com/KakhaPh",
+    },
     {
       title: "Plagiarism Quizz - Mailing system",
       description: "NextJS + ExpressJS + TypeScript",
