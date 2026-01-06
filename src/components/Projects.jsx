@@ -15,12 +15,20 @@ import img02 from "/assets/img/img02.jpg";
 import img03 from "/assets/img/img03.png";
 import img04 from "/assets/img/img04.png";
 import img05 from "/assets/img/img05.png";
+import stvProjectImg from "/assets/img/new-proj-stv.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "STV - News website",
+      description: "NextJS + NodeJS + TypeScript + MongoDB > Fullstack",
+      imgUrl: stvProjectImg,
+      linkIcon: "https://stv.ge",
+      githubIcon: "https://github.com/KakhaPh",
+    },
     {
       title: "Clinic - Kalantarov Website",
       description: "NextJS + NestJS + TypeScript + MongoDB > Fullstack",
