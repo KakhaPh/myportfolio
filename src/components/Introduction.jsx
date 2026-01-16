@@ -27,7 +27,14 @@ const Introduction = () => {
         "Jest",
         "Frontend",
         "Agile",
-        "OOP"
+        "OOP",
+        "Java",
+        "Kotlin",
+        "XCUITest",
+        "Selenium",
+        "Selenide",
+        "Playwright",
+        "Rest Assured",
     ], []);
 
     const options = useMemo(() => ({

@@ -1,7 +1,7 @@
 import { Col, Row } from 'react-bootstrap';
 import 'react-multi-carousel/lib/styles.css';
 import mycv1 from "/assets/cv/CV-Kakha-Phutkaradze.pdf";
-import mycv2 from "/assets/cv/CV_Kakha_Phutkaradze.pdf";
+import mycv2 from "/assets/cv/Kakha_Phutkaradze_CV.pdf";
 
 
 export const Resume = () => {
@@ -15,7 +15,7 @@ export const Resume = () => {
                                 <div className='Resume-top'>
                                     <h2>Kakha Phutkaradze</h2>
                                     <Col className='d-flex justify-content-between'>
-                                        <p>Software Development Engineer</p>
+                                        <p>Software Development Engineer / Test Automation Engineer</p>
                                         <p>kk.phutkaradze@gmail.com</p>
                                     </Col>
                                 </div>
@@ -23,12 +23,20 @@ export const Resume = () => {
                                 <div>
                                     <h3>Introduction</h3>
                                     <p className='text-justify'>
-                                        As a seasoned software developer with a robust foundation in web technologies, I bring a wealth of experience to the table.
-                                        My journey includes not only successful completion of coding bootcamps but also academic pursuits at a prestigious European university,
-                                        coupled with active participation in the Erasmus+ mobility program at Daugavpils University in Latvia. A nimble learner by nature,
-                                        I thrive on collaborating closely with clients to craft tailored solutions that meet their specific needs.
-                                        My commitment to excellence and passion for innovative problem-solving make me a valuable asset in the dynamic field of software development.
+                                        Software Development Engineer with a strong foundation in modern web technologies
+                                        and hands-on experience in enterprise-level test automation.
+                                        My background combines full-stack development, academic training at a European
+                                        university, and international experience through the Erasmus+ mobility program
+                                        at Daugavpils University in Latvia.
+                                        <br /><br />
+                                        In parallel with software development, I specialize in test automation engineering,
+                                        contributing to mobile (iOS/Android), web, and API testing in a banking environment.
+                                        I work with modern automation frameworks, focus on clean and maintainable test
+                                        architecture, and support reliable CI/CD-driven delivery.
+                                        I am highly adaptable, technically driven, and motivated to build robust,
+                                        scalable, and high-quality software systems.
                                     </p>
+
                                 </div>
                                 <hr />
                                 <Col className='d-flex justify-content-between'>
@@ -36,6 +44,10 @@ export const Resume = () => {
                                         <h3>Education</h3>
                                         <p className='text-justify'>European University (Tbilisi, Georgia, 2020 - Present) <span>Bachelor's degree: Information Technology</span></p>
                                         <p className='text-justify'>Daugavpils University (Daugavpils, Latvia, 2023 Autumn Semester) <span>Bachelor's degree: Information Technology (Erasmus + exchange program)</span></p>
+                                        <p className='text-justify'>
+                                            TBC IT Academy (June 2025 - November 2025)
+                                            <span> Test Automation Engineering Program</span>
+                                        </p>
                                     </div>
                                     <div className='w-100'>
                                         <h3>Professional Development</h3>
@@ -49,16 +61,25 @@ export const Resume = () => {
                                         <h3>Hard Skills</h3>
                                         <ul className='resume-ul'>
                                             <li>
-                                                <strong>Frontend Development:</strong> HTML, CSS/Sass/Bootstrap, Javascript/React.js
+                                                <strong>Frontend Development:</strong> HTML, CSS/Sass/Bootstrap, JavaScript, React.js
                                             </li>
                                             <li>
-                                                <strong>Backend Development:</strong> PHP/MVC - Laravel, Python
+                                                <strong>Backend Development:</strong> PHP (MVC) - Laravel, Python, NodeJS
                                             </li>
                                             <li>
                                                 <strong>Database Management:</strong> MySQL, PostgreSQL, SQL, MongoDB
                                             </li>
                                             <li>
-                                                <strong>API Integration:</strong> Axios, REST API
+                                                <strong>API Integration & Testing:</strong> RESTful APIs, Axios, Rest Assured
+                                            </li>
+                                            <li>
+                                                <strong>Test Automation Frameworks:</strong> Selenium, Selenide, Playwright, XCUITest, UIAutomator, Espresso
+                                            </li>
+                                            <li>
+                                                <strong>Mobile Automation:</strong> iOS (Xcode, XCUITest), Android (Android Studio, UIAutomator, Jetpack Compose UI Testing)
+                                            </li>
+                                            <li>
+                                                <strong>Programming Languages:</strong> Java, Kotlin, JavaScript, PHP, Python
                                             </li>
                                             <li>
                                                 <strong>Version Control:</strong> Git, GitHub
@@ -67,16 +88,18 @@ export const Resume = () => {
                                                 <strong>UI Design:</strong> Figma
                                             </li>
                                             <li>
-                                                <strong>Cloud Services:</strong> Firebase (Uploads, Hosting); DigitalOcean
+                                                <strong>Cloud Services:</strong> Firebase (Uploads, Hosting), DigitalOcean
                                             </li>
                                             <li>
-                                                <strong>Full-Stack Development:</strong> CRUD operations, real estate filters, dynamic layouts
+                                                <strong>Full-Stack Development:</strong> CRUD operations, dynamic layouts,
+                                                real estate filtering systems
                                             </li>
                                             <li>
                                                 <strong>Responsive Design:</strong> Mobile-first and cross-resolution compatibility
                                             </li>
                                             <li>
-                                                <strong>OS:</strong> Linux system administration and troubleshooting | Windows OS and Windows Server management | System performance optimization and configuration
+                                                <strong>Operating Systems:</strong> Linux system administration and troubleshooting |
+                                                Windows OS and Windows Server management | system performance optimization and configuration
                                             </li>
                                         </ul>
                                     </div>
@@ -115,16 +138,30 @@ export const Resume = () => {
                                                     <li>JavaScript (ES6+)</li>
                                                 </ul>
                                             </li>
+
                                             <li>
                                                 <strong>Back-End Development</strong>
                                                 <ul>
-                                                    <li>PHP/MVC - Laravel</li>
-                                                    <li>NodeJS</li>
+                                                    <li>PHP / MVC - Laravel</li>
+                                                    <li>Node.js</li>
                                                     <li>Python</li>
-                                                    <li>C/C++</li>
+                                                    <li>C / C++</li>
                                                     <li>JavaScript (ES6+)</li>
                                                 </ul>
                                             </li>
+
+                                            <li>
+                                                <strong>Test Automation & Quality Engineering</strong>
+                                                <ul>
+                                                    <li>Selenium / Selenide / Playwright</li>
+                                                    <li>Rest Assured</li>
+                                                    <li>XCUITest / UIAutomator / Espresso</li>
+                                                    <li>Jetpack Compose UI Testing</li>
+                                                    <li>Xcode / Android Studio</li>
+                                                    <li>iOS Simulators / Android Emulators & Real Devices</li>
+                                                </ul>
+                                            </li>
+
                                             <li>
                                                 <strong>Database Management</strong>
                                                 <ul>
@@ -134,8 +171,9 @@ export const Resume = () => {
                                                     <li>MongoDB</li>
                                                 </ul>
                                             </li>
+
                                             <li>
-                                                <strong>Version Control</strong>
+                                                <strong>Version Control & Build Systems</strong>
                                                 <ul>
                                                     <li>Git</li>
                                                     <li>GitHub</li>
@@ -143,15 +181,50 @@ export const Resume = () => {
                                             </li>
                                         </ul>
                                     </div>
+
                                     <div className='w-100'>
                                         <h3>Work Experience</h3>
                                         <ul className='resume-ul'>
                                             <li>
-                                                <strong>Front News - Georgia (2025-present)</strong>
+                                                <strong>TBC Bank - Georgia (October 2025 - present)</strong>
+                                                <ul>
+                                                    <li>Test Automation Engineer</li>
+                                                    <li>
+                                                        Designing, developing, and maintaining automated test suites for
+                                                        enterprise mobile banking applications on iOS and Android platforms.
+                                                    </li>
+                                                    <li>
+                                                        <strong>Technologies:</strong> Java, Kotlin, XCUITest, Selenium, Selenide,
+                                                        Playwright, Rest Assured, Xcode, Android Studio
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>STV News - Georgia (September - December 2025)</strong>
                                                 <ul>
                                                     <li>Lead Full-Stack Developer · News Platform Architect</li>
                                                     <strong>Active Project:</strong>
-                                                     <Row>
+                                                    <Row>
+                                                        <span className='resume-urls'><a href='https://stv.ge/'>Stv.ge</a>;</span>
+                                                    </Row>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>EuDent - Dental Clinic (August 2025 - December 2025)</strong>
+                                                <ul>
+                                                    <li>Full-Stack Developer · Informational Platform Architect</li>
+                                                    <strong>Active Project:</strong>
+                                                    <Row>
+                                                        <span className='resume-urls'><a href='https://eudent.ge/'>eudent.ge</a>;</span>
+                                                    </Row>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Front News - Georgia (February 2025 - December 2025)</strong>
+                                                <ul>
+                                                    <li>Lead Full-Stack Developer · News Platform Architect</li>
+                                                    <strong>Active Project:</strong>
+                                                    <Row>
                                                         <span className='resume-urls'><a href='https://frontnews.ge/'>Frontnews.ge</a>;</span>
                                                     </Row>
                                                 </ul>
@@ -159,7 +232,7 @@ export const Resume = () => {
                                             <li>
                                                 <strong>European University</strong>
                                                 <ul>
-                                                    <li>Software Development Engineer / Web Designer (2022-Present)</li>
+                                                    <li>Software Development Engineer / Web Designer (September 2022 - Present)</li>
                                                     <strong>Active Projects:</strong>
                                                     <Row>
                                                         <span className='resume-urls'><a href='https://lawandworld.ge/'>Lawandworld.ge</a>;</span>
@@ -174,8 +247,8 @@ export const Resume = () => {
                                             <li>
                                                 <strong>Freelance Platforms Fiverr, Upower, Freelancer</strong>
                                                 <ul>
-                                                    <li>UI/UX Designer / Front-end Developer (2019-Present)</li>
-                                                    <li>Front-end Developer (2019-Present)</li>
+                                                    <li>UI/UX Designer / Front-end Developer (January 2019 - August 2025)</li>
+                                                    <li>Front-end Developer (January 2019 - August 2025)</li>
                                                 </ul>
                                             </li>
                                             <li>
