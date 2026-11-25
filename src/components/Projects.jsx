@@ -16,12 +16,44 @@ import img03 from "/assets/img/img03.png";
 import img04 from "/assets/img/img04.png";
 import img05 from "/assets/img/img05.png";
 import stvProjectImg from "/assets/img/new-proj-stv.jpg";
+import grafiqo from "/assets/img/project-16.jpg";
+import tbilisicue from "/assets/img/project-18.jpg";
+import sorgiti from "/assets/img/project-17.jpg";
+import acadexon from "/assets/img/project-15.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
   const projects = [
+    {
+      title: "Sorgiti - Regional Renewable Energy Company",
+      description: "Design & Development | PHP/Laravel/Blade + MySQL > Fullstack",
+      imgUrl: sorgiti,
+      linkIcon: "https://sorgiti.com/",
+      githubIcon: "https://github.com/KakhaPh",
+    },
+    {
+      title: "Tbilisi Cue - Central University Of Europe",
+      description: "NextJS + NodeJS + TypeScript + MongoDB > Fullstack",
+      imgUrl: tbilisicue,
+      linkIcon: "https://tbilisi.cue.edu.ge/",
+      githubIcon: "https://github.com/KakhaPh",
+    },
+    {
+      title: "Grafiqo - Creative production & branding studio",
+      description: "Design & Development | PHP/Laravel/Blade + MySQL > Fullstack",
+      imgUrl: grafiqo,
+      linkIcon: "https://grafiqo.ge",
+      githubIcon: "https://github.com/KakhaPh",
+    },
+    {
+      title: "Acadexon - Academic Catalogue of Legal Research",
+      description: "Design & Development | PHP/Laravel/Blade + MySQL > Fullstack",
+      imgUrl: acadexon,
+      linkIcon: "https://acadexon.org",
+      githubIcon: "https://github.com/KakhaPh",
+    },
     {
       title: "STV - News website",
       description: "NextJS + NodeJS + TypeScript + MongoDB > Fullstack",
