@@ -1,8 +1,11 @@
+/* The contact form below is commented out for now; its state and handlers
+   are kept so it can be switched back on. */
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "/assets/img/Coder.png";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import TrackVisibility from '../lib/TrackVisibility';
 
 export const Contact = () => {
   const formInitialDetails = {

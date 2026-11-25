@@ -3,13 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "/assets/img/Coder.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import TrackVisibility from '../lib/TrackVisibility';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 10);
+  const [delta, setDelta] = useState(() => 300 - Math.random() * 10);
 
   // Memoized array to avoid re-creation
   const toRotate = useMemo(() => ["Web Developer", "Web Designer", "Freelancer", "Programmer"], []);
@@ -51,7 +51,7 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={6}>
             <TrackVisibility>
               {({ isVisible }) => (

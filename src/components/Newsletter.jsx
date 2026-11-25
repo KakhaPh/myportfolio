@@ -1,12 +1,18 @@
-import { useState, useEffect } from "react";
+/* The subscribe form below is commented out for now; its state and handlers
+   are kept so it can be switched back on. */
+/* eslint-disable no-unused-vars */
+import { useState } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
+  const [prevStatus, setPrevStatus] = useState(status);
 
-  useEffect(() => {
-    if (status === 'success') clearFields();
-  }, [status])
+  // Clear the field once a subscription succeeds.
+  if (status !== prevStatus) {
+    setPrevStatus(status);
+    if (status === 'success') setEmail('');
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,15 +23,11 @@ export const Newsletter = ({ status, message, onValidated }) => {
       })
   }
 
-  const clearFields = () => {
-    setEmail('');
-  }
-
   return (
     <Col lg={12}>
       <div className="newsletter-bx wow slideInUp">
         <Row>
-          <Col lg={12} md={6}>
+          <Col xs={12}>
             <h1 className="text-center">
               Hit me up for any opportunities or questions—I’m always open to new connections!
             </h1>

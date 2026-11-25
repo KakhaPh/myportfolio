@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import img1 from "/assets/img/Img1.png";
@@ -21,7 +20,7 @@ import tbilisicue from "/assets/img/project-18.jpg";
 import sorgiti from "/assets/img/project-17.jpg";
 import acadexon from "/assets/img/project-15.jpg";
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+import TrackVisibility from '../lib/TrackVisibility';
 
 export const Projects = () => {
 

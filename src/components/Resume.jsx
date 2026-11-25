@@ -1,5 +1,4 @@
 import { Col, Row } from 'react-bootstrap';
-import 'react-multi-carousel/lib/styles.css';
 import mycv1 from "/assets/cv/CV-Kakha-Phutkaradze.pdf";
 import mycv2 from "/assets/cv/Kakha_Phutkaradze_CV.pdf";
 
@@ -14,7 +13,7 @@ export const Resume = () => {
                             <Row>
                                 <div className='Resume-top'>
                                     <h2>Kakha Phutkaradze</h2>
-                                    <Col className='d-flex justify-content-between'>
+                                    <Col className='d-flex flex-column flex-lg-row justify-content-between gap-4 gap-lg-0'>
                                         <p>Software Development Engineer / Test Automation Engineer</p>
                                         <p>kk.phutkaradze@gmail.com</p>
                                     </Col>
@@ -39,8 +38,8 @@ export const Resume = () => {
 
                                 </div>
                                 <hr />
-                                <Col className='d-flex justify-content-between'>
-                                    <div className='w-100 pe-3'>
+                                <Col className='d-flex flex-column flex-lg-row justify-content-between gap-4 gap-lg-0'>
+                                    <div className='w-100 pe-lg-3'>
                                         <h3>Education</h3>
                                         <p className='text-justify'>European University (Tbilisi, Georgia, 2020 - Present) <span>Bachelor's degree: Information Technology</span></p>
                                         <p className='text-justify'>Daugavpils University (Daugavpils, Latvia, 2023 Autumn Semester) <span>Bachelor's degree: Information Technology (Erasmus + exchange program)</span></p>
@@ -56,8 +55,8 @@ export const Resume = () => {
                                 </Col>
                                 <hr />
 
-                                <Col className='d-flex justify-content-between'>
-                                    <div className='w-100 pe-3'>
+                                <Col className='d-flex flex-column flex-lg-row justify-content-between gap-4 gap-lg-0'>
+                                    <div className='w-100 pe-lg-3'>
                                         <h3>Hard Skills</h3>
                                         <ul className='resume-ul'>
                                             <li>
@@ -120,8 +119,8 @@ export const Resume = () => {
                                 </Col>
                                 <hr />
 
-                                <Col className='d-flex justify-content-between'>
-                                    <div className='w-100 pe-3'>
+                                <Col className='d-flex flex-column flex-lg-row justify-content-between gap-4 gap-lg-0'>
+                                    <div className='w-100 pe-lg-3'>
                                         <h3>Technologies</h3>
                                         <ul className='resume-ul'>
                                             <li>
@@ -264,9 +263,9 @@ export const Resume = () => {
                                         </ul>
                                     </div>
                                 </Col>
-                                <div className='downloadCvBtns d-flex justify-content-end pt-5'>
-                                    <div className='downloadCvBtn pe-5 text-end'><a href={mycv1} target='_blank' rel='noreferrer'>European University CV</a></div>
-                                    <div className='downloadCvBtn pe-5 '><a href={mycv2} target='_blank' rel='noreferrer'>My CV</a></div>
+                                <div className='downloadCvBtns d-flex flex-wrap gap-3 justify-content-center justify-content-md-end pt-5'>
+                                    <div className='downloadCvBtn'><a href={mycv1} target='_blank' rel='noreferrer'>European University CV</a></div>
+                                    <div className='downloadCvBtn'><a href={mycv2} target='_blank' rel='noreferrer'>My CV</a></div>
                                 </div>
                             </Row>
                         </div>

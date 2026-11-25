@@ -1,116 +1,76 @@
-import React, { useState, useEffect } from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import image1 from "/assets/img/html.png";
-import image2 from "/assets/img/css.png";
-import image3 from "/assets/img/sass.png";
-import image4 from "/assets/img/bootstrap.png";
-import image5 from "/assets/img/javascript.png";
-import image6 from "/assets/img/jqu.png";
-import image7 from "/assets/img/php.png";
-import image8 from "/assets/img/laravel.png";
-import image9 from "/assets/img/github.png";
-import image10 from "/assets/img/c++.png";
-import image11 from "/assets/img/py.png";
-import image12 from "/assets/img/wordpress.png";
-import image13 from "/assets/img/joomla.png";
-import image14 from "/assets/img/reactjs.png";
-import image15 from "/assets/img/mysql.png";
-import image16 from "/assets/img/mongodb.png";
+import { Row, Col } from 'react-bootstrap';
+import htmlImg from "/assets/img/html.png";
+import cssImg from "/assets/img/css.png";
+import sassImg from "/assets/img/sass.png";
+import bootstrapImg from "/assets/img/bootstrap.png";
+import javascriptImg from "/assets/img/javascript.png";
+import jqueryImg from "/assets/img/jqu.png";
+import phpImg from "/assets/img/php.png";
+import laravelImg from "/assets/img/laravel.png";
+import githubImg from "/assets/img/github.png";
+import cppImg from "/assets/img/c++.png";
+import pythonImg from "/assets/img/py.png";
+import wordpressImg from "/assets/img/wordpress.png";
+import joomlaImg from "/assets/img/joomla.png";
+import reactImg from "/assets/img/reactjs.png";
+import mysqlImg from "/assets/img/mysql.png";
+import mongodbImg from "/assets/img/mongodb.png";
+
+const levels = [
+  { label: 'Web Development', percent: 90 },
+  { label: 'Graphics Design', percent: 70 },
+  { label: 'Programming', percent: 80 },
+];
+
+const skills = [
+  { name: 'HTML', image: htmlImg },
+  { name: 'CSS', image: cssImg },
+  { name: 'Sass', image: sassImg },
+  { name: 'Bootstrap', image: bootstrapImg },
+  { name: 'JavaScript', image: javascriptImg },
+  { name: 'jQuery', image: jqueryImg },
+  { name: 'PHP', image: phpImg },
+  { name: 'Laravel', image: laravelImg },
+  { name: 'GitHub', image: githubImg },
+  { name: 'C++', image: cppImg },
+  { name: 'Python', image: pythonImg },
+  { name: 'WordPress', image: wordpressImg },
+  { name: 'Joomla', image: joomlaImg },
+  { name: 'ReactJS', image: reactImg },
+  { name: 'MySQL', image: mysqlImg },
+  { name: 'MongoDB', image: mongodbImg },
+];
 
 export const Skills = () => {
-
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
-  };
-
-  const [skills, setSkills] = useState([]);
-
-  useEffect(() => {
-    const fetchedSkills = [
-      { name: 'HTML', image: image1 },
-      { name: 'CSS', image: image2 },
-      { name: 'Sass', image: image3 },
-      { name: 'Bootstrap', image: image4 },
-      { name: 'JavaScript', image: image5 },
-      { name: 'jQuery', image: image7 },
-      { name: 'ReactJS', image: image6 },
-      { name: 'PHP', image: image8 },
-      { name: 'Laravel', image: image9 },
-      { name: 'Github', image: image10 },
-      { name: 'C++', image: image11 },
-      { name: 'Python', image: image12 },
-      { name: 'WordPress', image: image13 },
-      { name: 'Joomla', image: image14 },
-      { name: 'MySql', image: image15 },
-      { name: 'MongoDB', image: image16 },
-    ];
-    setSkills(fetchedSkills);
-  }, []);
-
   return (
     <section className="skill" id="skills">
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="skill-bx wow zoomIn">
+            <div className="skill-bx">
               <h2>Skills</h2>
               <p>Proficient in diverse web technologies, I bring adaptability and innovative problem-solving to the table, making a valuable contribution to software development projects.</p>
-              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                <div className="item">
-                  <div className="circle-border">
-                    <div className="circle">
-                      90%
+              <Row className="skill-levels justify-content-center g-4">
+                {levels.map(({ label, percent }) => (
+                  <Col key={label} xs={4} className="item">
+                    <div className="circle-border">
+                      <div className="circle">{percent}%</div>
                     </div>
+                    <h5>{label}</h5>
+                  </Col>
+                ))}
+              </Row>
+              <div className="skills-container">
+                {skills.map((skill) => (
+                  <div key={skill.name} className="skill-box">
+                    <img src={skill.image} alt={`${skill.name} logo`} title={skill.name} />
                   </div>
-                  <h5>Web Development</h5>
-                </div>
-
-                <div className="item">
-                  <div className="circle-border">
-                    <div className="circle">
-                      70%
-                    </div>
-                  </div>
-                  <h5>Graphics Design</h5>
-                </div>
-
-                <div className="item">
-                  <div className="circle-border">
-                    <div className="circle">
-                      80%
-                    </div>
-                  </div>
-                  <h5>Programming</h5>
-                </div>
-              </Carousel>
-            <div className="skills-container">
-              {skills.map((skill, index) => (
-                <div key={index} className="skill-box">
-                  <img src={skill.image} alt={`${skill.name} Logo`} />
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
     </section>
   )
 }

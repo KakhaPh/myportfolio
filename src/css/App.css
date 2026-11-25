@@ -98,7 +98,7 @@ p.danger {
 /************ Navbar Css ************/
 
 .mainLogo {
-  width: 120%;
+  width: 100%;
 }
 
 nav.navbar {
@@ -116,7 +116,7 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: clamp(130px, 11vw, 160px);
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -434,6 +434,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px 0 75px 0;
 }
 
+.skill-levels {
+  width: 80%;
+  margin: 0 auto !important;
+}
+
+.skill-levels h5 {
+  margin-top: 10px;
+}
+
 .skill-slider {
   width: 80%;
   margin: 0 auto;
@@ -609,6 +618,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-txtx {
   position: absolute;
+  padding: 0 12px;
   text-align: center;
   top: 65%;
   left: 50%;
@@ -624,7 +634,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .proj-txtx h4 {
-  font-size: 30px;
+  font-size: clamp(18px, 1.9vw, 30px);
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
@@ -770,6 +780,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: -122px;
 }
 
+.footer .newsletter-bx p {
+  color: #121212;
+}
+
 .newsletter-bx h3 {
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -830,6 +844,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .footer img {
   width: 26%;
+}
+
+.footer img.footer-logo {
+  min-width: 140px;
+  max-width: 200px;
 }
 
 .footer p {
@@ -896,10 +915,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-box {
-  width: 180px;
+  width: clamp(64px, 18vw, 180px);
   height: auto;
   border-radius: 5px;
-  margin: 20px;
+  margin: clamp(8px, 2vw, 20px);
   align-content: center;
   text-align: center;
 }
@@ -910,4 +929,275 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   text-decoration: none;
   padding: 8px;
+}
+
+.resume-bx {
+  overflow-wrap: anywhere;
+}
+
+.downloadCvBtn a {
+  display: inline-block;
+  padding: 10px 18px;
+}
+
+/************ Responsive ************/
+
+/* Large tablets / small laptops: navbar is expanded but tight on space */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 0 14px;
+    font-size: 17px;
+  }
+
+  .navbar-text button {
+    padding: 14px 22px;
+    font-size: 16px;
+  }
+}
+
+/* Collapsed navbar (below 992px) */
+@media (max-width: 991.98px) {
+  nav.navbar,
+  nav.navbar.scrolled {
+    padding: 12px 0;
+    background-color: #121212f2;
+  }
+
+  nav.navbar .navbar-toggler {
+    border: 0;
+  }
+
+  nav.navbar .navbar-collapse {
+    padding: 12px 0 8px;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 10px 0;
+  }
+
+  span.navbar-text {
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-top: 10px;
+  }
+
+  .social-icon {
+    margin-left: 0;
+  }
+
+  .navbar-text button {
+    margin-left: 0;
+    padding: 12px 26px;
+    font-size: 16px;
+  }
+
+  /* Banner */
+  .banner {
+    padding: 140px 0 60px 0;
+  }
+
+  .banner .tagline {
+    margin-bottom: 50px;
+  }
+
+  .banner button {
+    margin-top: 32px;
+  }
+
+  .banner .animated_img {
+    display: block;
+    margin: 50px auto 0;
+  }
+
+  /* Introduction: stack text above the tag cloud */
+  .Introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .myIntroduction,
+  .tagcloud {
+    padding: 40px 24px;
+  }
+
+  .myIntroduction > p {
+    padding: 16px 0 0;
+  }
+
+  .tagcloud {
+    padding-top: 0;
+  }
+
+  /* Section boxes */
+  .skill-bx,
+  .resume-bx {
+    padding: 48px 28px;
+    border-radius: 40px;
+  }
+
+  .newsletter-bx {
+    padding: 50px 40px;
+    border-radius: 40px;
+  }
+
+  .project p {
+    width: 80%;
+  }
+
+  .project .nav.nav-pills {
+    width: 100%;
+  }
+}
+
+/* Phones */
+@media (max-width: 767.98px) {
+  /* Put the typing word on its own line so the heading doesn't jump */
+  .banner h2 .txt-rotate {
+    display: block;
+    min-height: 1.2em;
+  }
+
+  .myIntroduction > p {
+    text-align: left;
+  }
+  .banner .tagline {
+    font-size: 16px;
+  }
+
+  .banner p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .banner button {
+    font-size: 18px;
+  }
+
+  .skill h2,
+  .project h2,
+  .contact h2 {
+    font-size: 32px;
+  }
+
+  .skill p,
+  .project p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .skill p {
+    margin: 14px 0 40px 0;
+  }
+
+  .myIntroduction > h2 {
+    letter-spacing: 0.15em;
+  }
+
+  .skill-bx,
+  .resume-bx {
+    padding: 36px 18px;
+    border-radius: 28px;
+  }
+
+  .skill-levels,
+  .skills-container {
+    width: 100%;
+  }
+
+  .skills-container {
+    padding-top: 30px;
+  }
+
+  .circle-border {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skill-levels h5 {
+    font-size: 15px;
+  }
+
+  .project {
+    padding: 60px 0;
+  }
+
+  .project .nav.nav-pills .nav-item {
+    width: 100%;
+  }
+
+  .resume-bx h2 {
+    font-size: 28px;
+  }
+
+  .resume-bx h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .resume-ul {
+    padding-left: 18px;
+  }
+
+  .contact {
+    padding: 50px 0 170px 0;
+  }
+
+  .contact img {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .newsletter-bx {
+    padding: 36px 20px;
+    border-radius: 28px;
+    margin-bottom: 50px;
+  }
+
+  .newsletter-bx h1 {
+    font-size: 22px;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .newsletter-bx p.fs-3 {
+    font-size: 17px !important;
+    overflow-wrap: anywhere;
+  }
+
+  .footer img {
+    width: 140px;
+  }
+
+  .footer .social-icon {
+    margin: 24px 0 0;
+  }
+}
+
+/* Touch screens have no hover: show the project title and links under
+   each screenshot instead of hiding them behind a hover overlay. */
+@media (hover: none) {
+  .proj-imgbx {
+    background: #1b1b1b;
+  }
+
+  .proj-imgbx::before {
+    display: none;
+  }
+
+  .proj-txtx {
+    position: static;
+    transform: none;
+    opacity: 1;
+    padding: 16px 12px 8px;
+  }
+
+  .fontawesome_prjectCard > i {
+    color: #75fdd4;
+  }
 }

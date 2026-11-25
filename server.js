@@ -1,7 +1,7 @@
-const express = require("express");
-const cors = require("cors");
-const nodemailer = require("nodemailer");
-require('dotenv').config();
+import express from "express";
+import cors from "cors";
+import nodemailer from "nodemailer";
+import "dotenv/config";
 
 const app = express();
 const router = express.Router();
@@ -29,9 +29,9 @@ contactEmail.verify((error) => {
 // Contact Form Route
 router.post("/contact", (req, res) => {
   const { firstName, lastName, email, phone, message } = req.body;
-  
+
   const name = `${firstName} ${lastName}`;
-  
+
   const mail = {
     from: email,
     to: process.env.EMAIL_RECIPIENT,
@@ -50,16 +50,16 @@ router.post("/contact", (req, res) => {
   contactEmail.sendMail(mail, (error) => {
     if (error) {
       console.error("Email Send Error:", error);
-      return res.status(500).json({ 
-        code: 500, 
+      return res.status(500).json({
+        code: 500,
         status: "Message Send Failed",
-        error: error.message 
+        error: error.message
       });
-    } 
-    
-    res.json({ 
-      code: 200, 
-      status: "Message Sent Successfully" 
+    }
+
+    res.json({
+      code: 200,
+      status: "Message Sent Successfully"
     });
   });
 });
